@@ -1,6 +1,9 @@
-name: hola-mundo #Nombre del workflow
-on: [push] #evento que lo activará
-jobs: #Definición de los jobs
+name: hola-mundo 
+on: 
+  push:
+    branches: 
+      - 'main' 
+jobs:
   hola-mundo: #Nombre del job
     runs-on: ubuntu-latest #Maquina en la que correrá
     steps: #Lista de steps del job hola-mundo
